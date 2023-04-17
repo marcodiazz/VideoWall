@@ -1,0 +1,23 @@
+{
+  "name": "videowall",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcodiazz/VideoWall.git"
+  },
+  "author": "The Pylots",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcodiazz/VideoWall/issues"
+  },
+  "homepage": "https://github.com/marcodiazz/VideoWall#readme",
+  "devDependencies": {
+    "electron": "^24.1.2"
+  }
+}
