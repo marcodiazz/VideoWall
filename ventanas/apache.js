@@ -13,6 +13,7 @@ new Chart("chart1", {
         }]
     },
     options: {
+        aspectRatio: 1.7
     }
   });
 
@@ -20,9 +21,9 @@ new Chart("chart1", {
     type: "doughnut",
     data: {
         labels: [
-          'Pediatria',
-          'Cirugia',
-          'Neurologia'
+          'PEDIATRÍA',
+          'CIRUGÍA',
+          'NEUROLOGÍA'
         ],
         datasets: [{
           label: 'Ocupacion de Areas',
@@ -36,7 +37,7 @@ new Chart("chart1", {
         }]
       },
     options: {
-        aspectRatio: 1.5
+        aspectRatio: 1.7
     }
   });
 
@@ -44,11 +45,11 @@ new Chart("chart1", {
     type: "polarArea",
     data: {
         labels: [
-          'Red',
-          'Green',
-          'Yellow',
-          'Grey',
-          'Blue'
+          'QUEMADURAS',
+          'COVID-19',
+          'ATAQUE CARDIACO',
+          'CIRUGÍAS',
+          'INSUFICIENCIA CARDIACA'
         ],
         datasets: [{
           label: 'My First Dataset',
@@ -63,16 +64,16 @@ new Chart("chart1", {
         }]
     },
     options: {
-            aspectRatio: 1.5
+            aspectRatio: 1.7
     }
   });
 
-new Chart("chart3", {
+new Chart("chart4", {
     type: 'line',
     data: {
         labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
         datasets: [{
-            label: 'Nuevos ingresos 1',
+            label: 'PACIENTES DE NUEVO INGRESO',
             data: Array.from({length: 12}, (_, i) => Math.random()*100), // 12 valores random de prueba
             cubicInterpolationMode: 'monotone', // Lineas suaves
             tension: 100,
@@ -80,7 +81,7 @@ new Chart("chart3", {
 
             borderColor: [ '#e3a5e0' ]
         }, {
-            label: 'Nuevos ingresos 2',
+            label: 'PACIENTES ANTIGUOS',
             data: Array.from({length: 12}, (_, i) => Math.random()*100), // 12 valores random de prueba
             cubicInterpolationMode: 'monotone', // Lineas suaves
             tension: 100,
@@ -89,6 +90,7 @@ new Chart("chart3", {
         }]
     },
     options: {
+        aspectRatio: 1.7,
       elements: { point: { radius: 0 } },
       scales: {
           x: { grid: { display: false } },
