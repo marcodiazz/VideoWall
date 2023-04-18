@@ -1,0 +1,57 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Informacion del Hospital</title>
+    <link rel="stylesheet" href="stylesHospitalInfo.css">
+    <link rel="stylesheet" href="app.css">
+  </head>
+  <body>
+    <header class="title">Informacion del hospital</header>
+    <div class="container">
+        <div class="box one">
+            <div class="subtitle">Saturación del hospital</div>
+            <ul class="lista">
+                <li class="box">
+                    <div class="listItem">
+                        <p>🟢 Cuidados intensivos médicos</p>
+                        <p>Alta</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="listItem">
+                        <p>🟢 Cuidados intensivos quirúrgicos</p>
+                        <p>Media</p>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <div class="box two">
+            <p class="subtitle">Ocupación</p>
+            <div class="number">
+                33<span class="symbol">%</span>
+            </div>
+
+        </div>
+        <div class="box three">
+            <p class="subtitle">Nuevos pacientes</p>
+            <div class="number">
+                33<span class="symbol">⬆</span>
+            </div>
+        </div>
+        <div class="box four">
+            <p class="subtitle">Temperatura del hospital</p>
+            <div class="number">
+                21<span class="symbol">º</span>
+            </div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+  </body>
+</html>
