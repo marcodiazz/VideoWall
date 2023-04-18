@@ -19,5 +19,8 @@
   "homepage": "https://github.com/marcodiazz/VideoWall#readme",
   "devDependencies": {
     "electron": "^24.1.2"
+  },
+  "dependencies": {
+    "chart.js": "^4.2.1"
   }
 }
