@@ -39,3 +39,44 @@ new Chart("chart1", {
     options: {
     }
   });
+
+new Chart("chart3", {
+    type: 'line',
+    data: {
+        labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+        datasets: [{
+            label: 'Nuevos ingresos 1',
+            data: Array.from({length: 12}, (_, i) => Math.random()*100), // 12 valores random de prueba
+            cubicInterpolationMode: 'monotone', // Lineas suaves
+            tension: 100,
+            yAxisID: 'y',
+
+            borderColor: [ '#e3a5e0' ]
+        }, {
+            label: 'Nuevos ingresos 2',
+            data: Array.from({length: 12}, (_, i) => Math.random()*100), // 12 valores random de prueba
+            cubicInterpolationMode: 'monotone', // Lineas suaves
+            tension: 100,
+            yAxisID: 'y1',
+            borderColor: [ '#d8d2fc' ]
+        }]
+    },
+    options: {
+      elements: { point: { radius: 0 } },
+      scales: {
+          x: { grid: { display: false } },
+          y: { type: 'linear', display: 'true', position: 'left' },
+          y1: { type: 'linear', display: 'true', position: 'right', grid: { drawOnChartArea: false  }, ticks: { display: false } },
+      },
+      interaction: {
+        mode: 'index',
+        intersect: false,
+      },
+      plugins: {
+        title: {
+          display: true,
+          text: 'Nuevos Ingresos'
+        }
+      }
+    }
+});
