@@ -1,0 +1,16 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    /* width: 90vw;
+    height: 90vh; */
+}
+.graficas{
+    padding: 1.5rem;
+    width: 85vw;
+}
+canvas{
+    box-sizing: border-box;
+}

@@ -12,22 +12,74 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
   <body>
-    <header class="title">Estado del hospital</header>
+    <header class="title">Alertas en planta</header>
     <div class="container">
       <div class="graficas box">
-        
+        <p class="subtitle">Incidencias en planta</p>
+        <div class="mapAlert" id="alert1"></div>
+        <div class="mapAlert" id="alert2"></div>
+        <div class="mapAlert" id="alert3"></div>
       </div>
       <div class="alertas box">
+        <p class="subtitle">Incidencias en planta</p>
         <ul class="lista">
           <li class="box">
-            <p>❗Se requiere asistencia en la planta 4</p>
+            <p>⚠️ Se requiere asistencia en la habitación 17</p>
           </li>
           <li class="box">
-            <p>❗Bloque de pediatría saturado</p>
+            <p>⚠️ Bloque de pediatría saturado</p>
           </li>
           <li class="box">
-            <p>❗Saturado servicio de ambulancias</p>
+            <p>⚠️ Emergencia en la sala 3</p>
           </li>
+        </ul>
+      </div>
+      <div class="medicosContainer box">
+        <p class="subtitle">Medicos disponibles</p>
+        <ul class="listaMedicos">
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Marco</p>
+            <p class="nombre">Díaz</p>
+            <div class="estado">Disponible</div>
+          </li>
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Álvaro</p>
+            <p class="nombre">Fernández</p>
+            <div class="estado">Disponible</div>
+          </li>
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Alejandro</p>
+            <p class="nombre">Cortijo</p>
+            <div class="estado">Disponible</div>
+          </li>
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Diego</p>
+            <p class="nombre">Cruz</p>
+            <div class="estadoRojo">No disponible</div>
+          </li>
+        </ul>
+        <ul class="listaMedicos">
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Almudena</p>
+            <p class="nombre">Ocaña</p>
+            <div class="estado">Disponible</div>
+          </li>
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Rafael</p>
+            <p class="nombre">Nadal</p>
+            <div class="estadoRojo">No disponible</div>
+          </li>
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Lucía</p>
+            <p class="nombre">Placed</p>
+            <div class="estado">Disponible</div>
+          </li>
+          <li class="box tarjetaMedico centerColumn" >
+            <p class="nombre">Gregorio</p>
+            <p class="nombre">Marañon</p>
+            <div class="estadoRojo">No disponible</div>
+          </li>
+
         </ul>
       </div>
     </div>

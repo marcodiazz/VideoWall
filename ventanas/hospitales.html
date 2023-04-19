@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Hospitales</title>
+    <link rel="stylesheet" href="stylesHospitales.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+  <body>
+    <p class="subtitle chartTitle">Predicción semanal de ocupación de camas</p>
+    <div class="container">
+        <div class="hospitales box">
+         
+          <div class="tarjetaHospital box">
+            <img class="logo" src="./img/hospital.png" alt="">
+            <p class="name">Gregorio Marañon</p>
+            <div class="barContainer box">
+                <div class="bar alta box">83%</div>
+            </div>
+          </div>
+          <div class="tarjetaHospital box">
+            <img class="logo" src="./img/hospital.png" alt="">
+            <p class="name">Príncipe de Asturias</p>
+            <div class="barContainer box">
+                <div class="bar media box">52%</div>
+            </div>
+          </div>
+          <div class="tarjetaHospital box">
+            <img class="logo" src="./img/hospital.png" alt="">
+            <p class="name">Infanta Leonor</p>
+            <div class="barContainer box">
+                <div class="bar baja box">21%</div>
+            </div>
+          </div>
+        </div>
+        <div class="hospitales box"></div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./predic.js"></script>
+  </body>
+</html>

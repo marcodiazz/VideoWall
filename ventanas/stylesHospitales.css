@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+}
+.subtitle{
+    margin: 2rem;
+    padding: 0;
+}
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 3rem;
+    /* width: 90vw;
+    height: 90vh; */
+}
+.hospitales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    width: 40vw;
+    height: 80vh;
+    gap: 3rem;
+}
+
+.tarjetaHospital{
+    width: 10rem;
+    height: 16rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+
+}
+.logo{
+    border-radius: 50%;
+    width: 6rem;
+    border: 0.2rem solid #4996d1;
+}
+.name{
+    margin-top: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #212121;
+    text-align: center;
+    width: 70%;
+}
+
+.barContainer{
+    width: 8rem;
+    height: 2rem;
+}
+
+.bar{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-radius: 24px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.alta{
+    background-color: #e92f29;
+    width: 80%;
+}
+.media{
+    background-color: #f59f35;
+    width: 60%;
+}
+.baja{
+    background-color: #12d245;
+    width: 40%;
+}
