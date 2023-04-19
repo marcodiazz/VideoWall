@@ -1,8 +1,8 @@
 .container{
     width: 95%;
     height: 100%;
-    margin-block-end: 20px;
-    margin-inline: 20px;
+    margin-block-end: 1rem;
+    margin-inline: 1rem;
     display: grid;   
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
@@ -37,7 +37,7 @@
 }
 .number{
     font-family: 'Nunito', sans-serif;
-    margin-top: 1.5rem;
+    margin-top: 0rem;
     font-size: 8rem;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .lista li{
-    margin-bottom:1rem ;
+    margin-bottom:0.5rem ;
 
 }
 .listItem{
@@ -57,23 +57,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: 400;
+    margin: 0;
+}
+.listItem p{
+    margin: 1rem;
 }
 .rojo{
+    font-family: 'Nunito', sans-serif;
+
     color: #BD0909;
     font-weight: 700;
     font-size: 1.8rem;
 }
 .naranja{
+    font-family: 'Nunito', sans-serif;
+
     color: #EB9617;
     font-weight: 700;
     font-size: 1.8rem;
 }
 .verde{
+    font-family: 'Nunito', sans-serif;
     color: #1CA44A;
     font-weight: 700;
     font-size: 1.8rem;
 }
 .azul{
+    
     color: #0070AF;
     font-weight: 500;
     font-size: 1.8rem;

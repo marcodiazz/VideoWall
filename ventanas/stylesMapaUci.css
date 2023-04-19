@@ -7,7 +7,7 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
     <title>Apache</title>
-    <link rel="stylesheet" href="stylesApache.css">
+    <link rel="stylesheet" href="stylesMapaUci.css">
     <link rel="stylesheet" href="app.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
@@ -15,22 +15,7 @@
     <header class="title">Estado del hospital</header>
     <div class="container">
       <div class="graficas box">
-        <div class="grafica1 box center">
-          <p class="chartTitle">Gravedad de los pacientes</p>
-          <canvas id="chart1"></canvas>
-        </div>
-        <div class="grafica2 box center">
-          <p class="chartTitle">Concurrencia de áreas</p>
-          <canvas id="chart2"></canvas>
-        </div>
-        <div class="grafica3 box center">
-          <p class="chartTitle">Enfermedades</p>
-          <canvas id="chart3"></canvas>
-        </div>
-        <div class="grafica4 box center">
-          <p class="chartTitle">Evolución de los pacientes</p>
-          <canvas id="chart4"></canvas>
-        </div>
+        
       </div>
       <div class="alertas box">
         <ul class="lista">
@@ -48,6 +33,6 @@
     </div>
 
     <!-- You can also require other files to run in this process -->
-    <script src="./apache.js"></script>
+    <!-- <script src="./apache.js"></script> -->
   </body>
 </html>

@@ -20,7 +20,7 @@ body{
 .title{
     font-family: 'Poppins', sans-serif;
     font-size: 2.2rem;
-    margin: 1.5rem;
+    margin: 1rem;
     font-weight: 600;
 }
 .subtitle{
@@ -28,11 +28,11 @@ body{
     font-size: 1.5rem;
     font-weight: 600;
     margin: 1rem;
-    color: #1f5985;
+    color: #212121;
 }
 
 .number{
-    /* font-size: 3rem; */
+    font-size: 6rem;
     color: #4996d1;
     font-weight: 600;
 }
