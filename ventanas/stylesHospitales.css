@@ -15,14 +15,24 @@ body{
     /* width: 90vw;
     height: 90vh; */
 }
-.hospitales{
+.block{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5rem;
     width: 40vw;
-    height: 80vh;
-    gap: 3rem;
+    height: 75vh;
+    gap: 2rem;
+
+}
+.hospitales{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+
 }
 
 .tarjetaHospital{
@@ -37,7 +47,7 @@ body{
 }
 .logo{
     border-radius: 50%;
-    width: 6rem;
+    width: 5.5rem;
     border: 0.2rem solid #4996d1;
 }
 .name{
@@ -47,7 +57,7 @@ body{
     font-weight: 700;
     color: #212121;
     text-align: center;
-    width: 70%;
+    width: 90%;
 }
 
 .barContainer{
@@ -78,4 +88,225 @@ body{
 .baja{
     background-color: #12d245;
     width: 40%;
+}
+
+.mapa{
+   
+    background: url(./img/mapaMadrid.jpeg);
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; */
+    background-size: cover; 
+  
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    gap: 0;
+  
+}
+
+.iconoHospital{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 0.2rem solid #4996d1;  
+}
+.iconoHospital img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#hospital1{
+    grid-column: 9;
+    grid-row: 8;
+}
+#hospital2{
+    grid-column: 5;
+    grid-row: 3;
+}
+#hospital3{
+    grid-column: 3;
+    grid-row: 9;
+}
+
+.ocupada{
+    width: 80%;
+    height: 80%;
+    background: #e92f29;
+}
+.libre{
+    width: 80%;
+    height: 80%;
+    background: #12d245;
+}
+
+#ambulancia1{
+    grid-column: 3;
+    grid-row: 8;
+    animation-name: movimientoAmbulancia1;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+#ambulancia2{
+    grid-column: 5;
+    grid-row: 4;
+    animation-name: movimientoAmbulancia3;
+    animation-duration: 16s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#ambulancia3{
+    grid-column: 4;
+    grid-row: 3;
+    scale: 0.8;
+
+}
+#ambulancia4{
+    grid-column: 4;
+    grid-row: 9;
+    animation-name: movimientoAmbulancia2;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes movimientoAmbulancia1{
+    0%{
+        grid-column: 3;
+        grid-row: 5;
+        filter: brightness(1.5);
+        scale: 1;
+    }
+    25%{
+        grid-column: 3;
+        grid-row: 6;
+        scale: 0.8;
+        filter: brightness(1);
+        background: #e92f29
+    }
+    75%{
+        grid-column: 3;
+        grid-row: 7;
+        filter: brightness(1.5);
+        scale: 1;
+        background: #e92f29
+
+
+    }
+    100%{
+        grid-column: 3;
+        grid-row: 8;
+        scale: 1;
+        background: #12d245;  
+    }
+}
+
+@keyframes movimientoAmbulancia2{
+    0%{
+        grid-column: 4;
+        grid-row: 9;
+        filter: brightness(1.5);
+        scale: 1;
+        background: #12d245;  
+
+    }
+    20%{
+        grid-column: 5;
+        grid-row: 9;
+        scale: 0.8;
+        filter: brightness(1);
+        background: #e92f29
+    }
+    40%{
+        grid-column: 6;
+        grid-row: 9;
+        filter: brightness(1.5);
+        scale: 1;
+        background: #e92f29
+
+
+    }
+    60%{
+        grid-column: 7;
+        grid-row: 9;
+        scale: 0.8;
+        background: #e92f29
+        
+    }
+    80%{
+        grid-column: 8;
+        grid-row: 9;
+        scale: 1;
+        background: #e92f29
+    }
+    100%{
+        grid-column: 8;
+        grid-row: 8;
+        scale: 1;
+        background: #12d245;  
+    }
+}
+
+
+@keyframes movimientoAmbulancia3{
+    0%{
+        grid-column: 5;
+        grid-row: 4;
+        filter: brightness(1.5);
+        scale: 1;
+        background: #12d245;  
+
+    }
+    15%{
+        grid-column: 5;
+        grid-row: 5;
+        scale: 0.8;
+        filter: brightness(1);
+        background: #e92f29
+    }
+    30%{
+        grid-column: 5;
+        grid-row: 6;
+        filter: brightness(1.5);
+        scale: 1;
+        background: #e92f29
+
+
+    }
+    45%{
+        grid-column: 6;
+        grid-row: 6;
+        scale: 0.8;
+        background: #e92f29
+        
+    }
+    60%{
+        grid-column: 7;
+        grid-row: 6;
+        scale: 1;
+        background: #e92f29;
+    }
+    75%{
+        grid-column: 8;
+        grid-row: 6;
+        scale: 0.8;
+        background: #e92f29;
+    }
+    90%{
+        grid-column: 9;
+        grid-row: 6;
+        scale: 1;
+        background: #e92f29;
+    }
+    100%{
+        grid-column: 9;
+        grid-row: 7;
+        scale: 1;
+        background: #12d245;  
+    }
 }

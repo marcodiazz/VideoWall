@@ -19,12 +19,17 @@ const createWindow = () => {
       width: 1920,
       height: 1080
     })
+    const win5 = new BrowserWindow({
+      width: 1920,
+      height: 1080
+    })
   
   
     win1.loadFile('./ventanas/index.html')
     win2.loadFile('./ventanas/hospitalInfo.html')
     win3.loadFile('./ventanas/mapaUci.html')
     win4.loadFile('./ventanas/prediccionSemanal.html')
+    win5.loadFile('./ventanas/hospitales.html')
   }
 
   // cierre Y creacion de las ventanas

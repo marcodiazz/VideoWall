@@ -1,6 +1,6 @@
 let xValuesGravedad = ["Grave", "Moderado", "Estable"];
 let yValues = [15, 30, 55];
-let barColors = ["#BD0909", "#EB9617", "#1CA44A"];
+let barColors = ["#ff595e", "#ffd166", "#06d6a0"];
 
 
 new Chart("chart1", {
@@ -8,8 +8,10 @@ new Chart("chart1", {
     data: {
         labels: xValuesGravedad,
         datasets: [{
+          label: [],
             backgroundColor: barColors, 
-            data: yValues
+            data: yValues,
+            borderRadius: 15
         }]
     },
     options: {
@@ -21,17 +23,21 @@ new Chart("chart1", {
     type: "doughnut",
     data: {
         labels: [
-          'PEDIATRÍA',
-          'CIRUGÍA',
-          'NEUROLOGÍA'
+          'MEDICINA INTERNA',
+          'HOSPITALIZACIÓN',
+          'CARDIOLOGÍA', 
+          'PULMONAR',
+          'MEDICINA GENERAL'
         ],
         datasets: [{
           label: 'Ocupacion de Areas',
-          data: [300, 50, 100],
+          data: [300, 50, 100, 200, 150],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(54, 162, 235)',
-            'rgb(255, 205, 86)'
+            'rgb(255, 205, 86)',
+            'rgb(201, 103, 207)',
+            'rgb(75, 192, 192)'
           ],
           hoverOffset: 4
         }]
@@ -45,15 +51,15 @@ new Chart("chart1", {
     type: "polarArea",
     data: {
         labels: [
-          'QUEMADURAS',
-          'COVID-19',
-          'ATAQUE CARDIACO',
-          'CIRUGÍAS',
-          'INSUFICIENCIA CARDIACA'
+          'CARDIOVASCULARES',
+          'RESPIRATORIAS',
+          'NEUROLÓGICAS',
+          'SEPSIS',
+          'GRASTROINTESTINAL'
         ],
         datasets: [{
           label: 'My First Dataset',
-          data: [100, 70, 150, 120, 50],
+          data: [683, 463, 518, 388, 464],
           backgroundColor: [
             'rgb(255, 99, 132)',
             'rgb(75, 192, 192)',

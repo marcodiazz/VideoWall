@@ -1,6 +1,6 @@
 .container{
   width: 95%;
-  height: 100%;
+  height: 90%;
   margin-block-end: 20px;
   margin-inline: 20px;
   display: grid;   
@@ -9,12 +9,6 @@
   grid-template-rows: 1fr 1fr;
 }
 .graficas{
-  /* display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 2;
-  gap: 20px;  */
   background: url(./img/mapaCamas.png) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -23,7 +17,7 @@
 
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(7, 1fr);;
+  grid-template-rows: repeat(7, 1fr);
 
   grid-row-start: 1;
   grid-row-end: 3;
@@ -62,7 +56,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-inline: 10px;
+  padding-inline: 0.1rem;
   background: #d12525e5;
   color: white;
 }
@@ -141,7 +135,7 @@ li p{
 
 }
 .estado{
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-weight: 700;
   background: #43db52;
   padding: 0.5rem;
@@ -149,7 +143,7 @@ li p{
   color: white;
 }
 .estadoRojo{
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   font-weight: 700;
   background: #d12525;
   padding: 0.5rem;

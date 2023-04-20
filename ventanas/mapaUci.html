@@ -4,15 +4,13 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
-    <title>Apache</title>
+    <title>Mapa Uci</title>
     <link rel="stylesheet" href="stylesMapaUci.css">
     <link rel="stylesheet" href="app.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
   <body>
-    <header class="title">Alertas en planta</header>
+    <!-- <header class="title">Alertas en planta</header> -->
     <div class="container">
       <div class="graficas box">
         <p class="subtitle">Incidencias en planta</p>
@@ -21,21 +19,21 @@
         <div class="mapAlert" id="alert3"></div>
       </div>
       <div class="alertas box">
-        <p class="subtitle">Incidencias en planta</p>
+        <p class="subtitle">Alertas</p>
         <ul class="lista">
           <li class="box">
             <p>⚠️ Se requiere asistencia en la habitación 17</p>
           </li>
           <li class="box">
-            <p>⚠️ Bloque de pediatría saturado</p>
+            <p>⚠️ Parada cardiaca en habitacion 5</p>
           </li>
           <li class="box">
-            <p>⚠️ Emergencia en la sala 3</p>
+            <p>⚠️ Constantes vitales bajando en sala 11</p>
           </li>
         </ul>
       </div>
       <div class="medicosContainer box">
-        <p class="subtitle">Medicos disponibles</p>
+        <p class="subtitle">Médicos disponibles</p>
         <ul class="listaMedicos">
           <li class="box tarjetaMedico centerColumn" >
             <p class="nombre">Marco</p>
@@ -52,11 +50,11 @@
             <p class="nombre">Cortijo</p>
             <div class="estado">Disponible</div>
           </li>
-          <li class="box tarjetaMedico centerColumn" >
+          <!-- <li class="box tarjetaMedico centerColumn" >
             <p class="nombre">Diego</p>
             <p class="nombre">Cruz</p>
             <div class="estadoRojo">No disponible</div>
-          </li>
+          </li> -->
         </ul>
         <ul class="listaMedicos">
           <li class="box tarjetaMedico centerColumn" >
@@ -74,11 +72,11 @@
             <p class="nombre">Placed</p>
             <div class="estado">Disponible</div>
           </li>
-          <li class="box tarjetaMedico centerColumn" >
+          <!-- <li class="box tarjetaMedico centerColumn" >
             <p class="nombre">Gregorio</p>
             <p class="nombre">Marañon</p>
             <div class="estadoRojo">No disponible</div>
-          </li>
+          </li> -->
 
         </ul>
       </div>

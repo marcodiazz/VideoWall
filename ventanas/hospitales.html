@@ -8,36 +8,84 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     </head>
   <body>
-    <p class="subtitle chartTitle">Predicción semanal de ocupación de camas</p>
+    <p class="subtitle chartTitle">Red de hospitales cercanos</p>
     <div class="container">
-        <div class="hospitales box">
-         
-          <div class="tarjetaHospital box">
-            <img class="logo" src="./img/hospital.png" alt="">
-            <p class="name">Gregorio Marañon</p>
-            <div class="barContainer box">
-                <div class="bar alta box">83%</div>
+        <div class="block box"> 
+      <p class="subtitle">Ocupación de hospitales</p>
+
+          <div class="hospitales">
+            <div class="tarjetaHospital box">
+              <img class="logo" src="./img/hospital.png" alt="">
+              <p class="name">Gregorio Marañon</p>
+              <div class="barContainer box">
+                  <div class="bar alta box">83%</div>
+              </div>
+            </div>
+            <div class="tarjetaHospital box">
+              <img class="logo" src="./img/hospital.png" alt="">
+              <p class="name">Príncipe de Asturias</p>
+              <div class="barContainer box">
+                  <div class="bar media box">52%</div>
+              </div>
+            </div>
+            <div class="tarjetaHospital box">
+              <img class="logo" src="./img/hospital.png" alt="">
+              <p class="name">Infanta Leonor</p>
+              <div class="barContainer box">
+                  <div class="bar baja box">21%</div>
+              </div>
             </div>
           </div>
-          <div class="tarjetaHospital box">
-            <img class="logo" src="./img/hospital.png" alt="">
-            <p class="name">Príncipe de Asturias</p>
-            <div class="barContainer box">
-                <div class="bar media box">52%</div>
+          <div class="hospitales">
+            <div class="tarjetaHospital box">
+              <img class="logo" src="./img/hospital.png" alt="">
+              <p class="name">San Carlos</p>
+              <div class="barContainer box">
+                  <div class="bar alta box">91%</div>
+              </div>
             </div>
-          </div>
-          <div class="tarjetaHospital box">
-            <img class="logo" src="./img/hospital.png" alt="">
-            <p class="name">Infanta Leonor</p>
-            <div class="barContainer box">
-                <div class="bar baja box">21%</div>
+            <div class="tarjetaHospital box">
+              <img class="logo" src="./img/hospital.png" alt="">
+              <p class="name">La Paz</p>
+              <div class="barContainer box">
+              <div class="bar baja box">35%</div>
+              </div>
+            </div>
+            <div class="tarjetaHospital box">
+              <img class="logo" src="./img/hospital.png" alt="">
+              <p class="name">La princesa</p>
+              <div class="barContainer box">
+                  <div class="bar media box">65%</div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="hospitales box"></div>
+        <div class="block box mapa">
+          <div class="iconoHospital" id="hospital1">
+            <img src="./img/hospital.png" alt="">
+          </div>
+          <div class="iconoHospital" id="hospital2">
+            <img src="./img/hospital.png" alt="">
+          </div>
+          <div class="iconoHospital" id="hospital3">
+            <img src="./img/hospital.png" alt="">
+          </div>
+          <div class="iconoHospital ocupada" id="ambulancia1">
+            <img src="./img/ambulance.png" alt="">
+          </div>
+          <div class="iconoHospital ocupada" id="ambulancia2">
+            <img src="./img/ambulance.png" alt="">
+          </div>
+          <div class="iconoHospital libre" id="ambulancia3">
+            <img src="./img/ambulance.png" alt="">
+          </div>
+          <div class="iconoHospital ocupada" id="ambulancia4">
+            <img src="./img/ambulance.png" alt="">
+          </div>
+        </div>
     </div>
 
     <!-- You can also require other files to run in this process -->
-    <script src="./predic.js"></script>
+    <!-- <script src="./predic.js"></script> -->
   </body>
 </html>
